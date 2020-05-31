@@ -1,6 +1,6 @@
 const keys = document.querySelectorAll(".key");
 
-function playSound(e) {
+function playSoundKeyboard(e) {
 	const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
 	const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 	if (!audio) return; // stop the function from running
@@ -26,7 +26,7 @@ function removeTransition(e) {
 }
 
 // Event Listeners
-window.addEventListener("keydown", playSound);
+window.addEventListener("keydown", playSoundKeyboard);
 window.addEventListener("click", playSoundClick);
 keys.forEach((key) => key.addEventListener("transitionend", removeTransition));
 

@@ -35,6 +35,7 @@ body {
   transition: all .07s ease;
   width: 10rem;
   text-align: center;
+  cursor: pointer;
   color: white;
   background: rgba(0,0,0,0.4);
   text-shadow: 0 0 .5rem black;
